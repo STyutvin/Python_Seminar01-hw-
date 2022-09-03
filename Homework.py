@@ -17,14 +17,29 @@
 #                 print('Выражение ¬(X ⋁ Y ⋁ Z) = ¬X ⋀ ¬Y ⋀ ¬Z истинно')
 #             else:
 #                 print('Выражение ¬(X ⋁ Y ⋁ Z) = ¬X ⋀ ¬Y ⋀ ¬Z ложно')
-x=1
-y=0
-z=1
-print(not(x), not(y), not(z))
-print(not(x or y or z))
-print((not(x)) and (not(y)) and (not(z)))
-if not(x or y or z) == (not(x)) and (not(y)) and (not(z)):
-    print('Выражение ¬(X ⋁ Y ⋁ Z) = ¬X ⋀ ¬Y ⋀ ¬Z истинно')
-else:
-    print('Выражение ¬(X ⋁ Y ⋁ Z) = ¬X ⋀ ¬Y ⋀ ¬Z ложно')
+# x=1
+# y=0
+# z=1
+# print(not(x), not(y), not(z))
+# print(not(x or y or z))
+# print((not(x)) and (not(y)) and (not(z)))
+# if not(x or y or z) == (not(x)) and (not(y)) and (not(z)):
+#     print('Выражение ¬(X ⋁ Y ⋁ Z) = ¬X ⋀ ¬Y ⋀ ¬Z истинно')
+# else:
+#     print('Выражение ¬(X ⋁ Y ⋁ Z) = ¬X ⋀ ¬Y ⋀ ¬Z ложно')
 #--------------------------------------------------------------------------
+
+# Задача #4. Напишите программу, которая принимает на вход координаты точки (X и Y), причём X ≠ 0 и Y ≠ 0 и 
+# выдаёт номер четверти плоскости, в которой находится эта точка (или на какой оси она находится).
+coordinate_X=int(input('Введите координату Х, отличную от нуля: '))
+coordinate_Y=int(input('Введите координату Y, отличную от нуля: '))
+if coordinate_X==0 or coordinate_Y==0:
+    print('Координаты введены некорректно')
+elif coordinate_X>0 and coordinate_Y>0:
+    print('Точка с заданнами координатами находится в 1-й четверти')
+elif coordinate_X>0 and coordinate_Y<0:
+    print('Точка с заданнами координатами находится в 4-й четверти')
+elif coordinate_X<0 and coordinate_Y>0:
+    print('Точка с заданнами координатами находится в 2-й четверти')
+else:
+    print('Точка с заданнами координатами находится в 3-й четверти')
