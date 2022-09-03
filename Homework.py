@@ -9,24 +9,14 @@
 #--------------------------------------------------------------------------
 
 # Задача №2. Напишите программу для. проверки истинности утверждения ¬(X ⋁ Y ⋁ Z) = ¬X ⋀ ¬Y ⋀ ¬Z для всех значений предикат.
-# for x in range(0,2):
-#     for y in range(0,2):
-#         for z in range(0,2):
-#             # not(x or y or z) == (not(x)) and (not(y)) and (not(z))
-#             if not(x or y or z) == (not(x)) and (not(y)) and (not(z)):
-#                 print('Выражение ¬(X ⋁ Y ⋁ Z) = ¬X ⋀ ¬Y ⋀ ¬Z истинно')
-#             else:
-#                 print('Выражение ¬(X ⋁ Y ⋁ Z) = ¬X ⋀ ¬Y ⋀ ¬Z ложно')
-# x=1
-# y=0
-# z=1
-# print(not(x), not(y), not(z))
-# print(not(x or y or z))
-# print((not(x)) and (not(y)) and (not(z)))
-# if not(x or y or z) == (not(x)) and (not(y)) and (not(z)):
-#     print('Выражение ¬(X ⋁ Y ⋁ Z) = ¬X ⋀ ¬Y ⋀ ¬Z истинно')
-# else:
-#     print('Выражение ¬(X ⋁ Y ⋁ Z) = ¬X ⋀ ¬Y ⋀ ¬Z ложно')
+for x in range(0,2):
+    for y in range(0,2):
+        for z in range(0,2):
+            # not(x or y or z) == (not(x)) and (not(y)) and (not(z))
+            if not(x or y or z) == (not x and not y and not z):
+                print('Выражение ¬(X ⋁ Y ⋁ Z) = ¬X ⋀ ¬Y ⋀ ¬Z истинно')
+            else:
+                print('Выражение ¬(X ⋁ Y ⋁ Z) = ¬X ⋀ ¬Y ⋀ ¬Z ложно')
 #--------------------------------------------------------------------------
 
 # Задача #3. Напишите программу, которая принимает на вход координаты точки (X и Y), причём X ≠ 0 и Y ≠ 0 и 
@@ -60,9 +50,9 @@
 #--------------------------------------------------------------------------
 
 # Задача №5. Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 2D пространстве.
-coordinate_X1=int(input('Введите координату Х1: '))
-coordinate_Y1=int(input('Введите координату Y1: '))
-coordinate_X2=int(input('Введите координату Х2: '))
-coordinate_Y2=int(input('Введите координату Y2: '))
-distance=((coordinate_X2 - coordinate_X1)**2 + (coordinate_Y2 - coordinate_Y1)**2)**(1/2)
-print(round(distance, 3))
+# coordinate_X1=int(input('Введите координату Х1: '))
+# coordinate_Y1=int(input('Введите координату Y1: '))
+# coordinate_X2=int(input('Введите координату Х2: '))
+# coordinate_Y2=int(input('Введите координату Y2: '))
+# distance=((coordinate_X2 - coordinate_X1)**2 + (coordinate_Y2 - coordinate_Y1)**2)**(1/2)
+# print(round(distance, 3))
